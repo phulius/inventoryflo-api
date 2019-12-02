@@ -62,3 +62,9 @@ typings/
 
 # Serverless directories
 .serverless
+
+*_pycache_*
+
+.DS_Store
+
+*.zip
