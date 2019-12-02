@@ -1,0 +1,23 @@
+{
+  "name": "inventoryflo-api",
+  "version": "1.0.0",
+  "description": "Rest API layer for InventoryFlo",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phulius/inventoryflo-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phulius/inventoryflo-api/issues"
+  },
+  "homepage": "https://github.com/phulius/inventoryflo-api#readme",
+  "dependencies": {
+    "aws-sdk": "^2.543.0",
+    "pg": "^7.12.1"
+  }
+}
