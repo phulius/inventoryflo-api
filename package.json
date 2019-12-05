@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/phulius/inventoryflo-api#readme",
   "dependencies": {
+    "aes256": "^1.0.4",
     "aws-sdk": "^2.543.0",
     "pg": "^7.12.1"
   }
