@@ -4,9 +4,16 @@
 // const env = process.env.env;
 // var dataKey = None;
 
+// const constants = {};
+
+// const envVars = {};
+
+// const secrets = {};
+
 // function getDataKey() {
 // 	let encryptedDataKey = Buffer.from(process.env.data_key, "base64");
-// 	dataKey = await kms.decrypt();
+// 	dataKey = kms.decrypt();
+// 	return dataKey;
 // }
 
 // function decrypt(cipherText) {
@@ -16,4 +23,15 @@
 // 	return aes256.decrypt(dataKey, cipherText);
 // }
 
-// exports.get = key => {};
+// exports.get = key => {
+// 	if (key in constants) {
+// 		return constants[key];
+// 	}
+// 	if (key in envVars[env]) {
+// 		return envVars[env][key];
+// 	}
+// 	if (key in secrets[env]) {
+// 		return decrypt(secrets[env][key]);
+// 	}
+// 	return undefined;
+// };
