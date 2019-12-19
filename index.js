@@ -16,6 +16,7 @@ const resourceDbDetails = {
 function respond(status, body, headers = {}) {
 	let defaultHeaders = {
 		"Content-Type": "application/json",
+		"Access-Control-Allow-Origin": "*",
 	};
 	return {
 		isBase64Encoded: false,
@@ -98,7 +99,6 @@ exports.handler = async event => {
 			return respond(200, "", {
 				Allow: allowedMethods,
 				"Access-Control-Allow-Methods": allowedMethods,
-				"Access-Control-Allow-Origin": "*",
 				"Content-Length": "0",
 			});
 		case "GET":
